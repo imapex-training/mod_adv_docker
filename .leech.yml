@@ -1,0 +1,14 @@
+---
+input_file: ./README.md
+output_directory: ./slides
+output_filename: slide
+reveal:
+  template:
+  template_color: FFFFFF
+  intro:
+  intro_title: Advanced Docker and Docker Hub
+  intro_author:
+  intro_color: 049FD9
+  closing:
+  closing_message: Thank you!
+  closing_color: 049FD9
