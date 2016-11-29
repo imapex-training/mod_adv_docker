@@ -4,7 +4,12 @@
 # Module 3: Advanced Docker and Docker Hub
 
 Learning about Docker, Docker Hub, and Containers
+
 [item]: # (/slide)
+
+## Abstract 
+
+Along with micro-services, containerization of applications, particularly leveraging Docker, continues to be a major aspect of modern development practices and deployment strategies.  Docker makes it quite simple to pull down an application in an image and use it to start a new container.  Creating well designed and efficient custom image that are tagged and published to the proper registries as part of a code pipeline requires a bit more depth of knowledge.  Through the hands-on exercises in this module, we will walk through the most critical elements of leveraging Docker as a delivery mechanism for your code.  Topics discussed include Dockerfile creation, registry options, the meaning and use of tags, and auto-build repositories.  
 
 [item]: # (slide)
 # Main Topics
