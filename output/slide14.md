@@ -1,29 +1,13 @@
 
-## Dockerfile: COPY and CMD
-* Use `COPY` to bring in your code to the container.  
-* After copying your code into the container, use `RUN` commands to take whatever actions needed.  
-* Use `CMD` to instruct the container what to do upon execution.  
+## Docker CLI: Accessing the Docker image shell
 
 ```
-	FROM debian:latest
-	MAINTAINER Your Name <email@domain.com>
+	docker run -it <your username>/imapex101_dockerfile /bin/bash
 
-	# You can provide comments in Dockerfiles
-	# Install any needed packages for your application
-	RUN apt-get update && apt-get install -y \
-	    aufs-tools \
-	    automake \
-	    build-essential \
-	    curl \
-	    dpkg-sig \
-	    mercurial \
-	 && rm -rf /var/lib/apt/lists/*
-
-	EXPOSE 80
-
-	COPY hello_world.sh /root/
-	RUN chmod +x /root/hello_world.sh
-
-	CMD ["/root/hello_world.sh"]
+	# now you're in the container, type exit to stop the container
+	root@80333d17d6c2:/# exit
 ```
-	
+
+* `-it` attaches to STDIN and creates a tty terminal to use
+* `/bin/bash` specifies the command to run inside the container
+

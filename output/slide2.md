@@ -1,7 +1,7 @@
+# Main Topics
 
-##  Why Containers
-
-* Easily package your application dependencies
-* Deploy on many container-friendly platforms
-* Container registries make it easy to distribute
+* [Dockerfiles](#section-1-dockerfiles)
+* [Docker Registries](#section-2-registry-considerations)
+* [Tags](#section-3-tags)
+* [Manual vs Auto-Build Repos](#section-4-manual-vs-auto-build-repos)
 

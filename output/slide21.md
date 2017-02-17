@@ -1,11 +1,20 @@
-Within a single Repository, tags are used to provide different versions of what is typically the same application or service.  Some common uses of the tags would be:
 
-* Actual version control
-	* It is common to see tags like **:v0.1**, **:v0.2**, **:v0.3**
-* Variations of the base image
-	* **python:2-alpine**, **python:2-wheezy**, **python:2-slim**
-* Stages of Development
-	* **:dev**, **:prod**, **:qa**
-* Indications of Git Branches/Tags
-	* **:feature/test**, **:feature/ui**, **:master**
+```
+	docker build -t <your username>/imapex101_dockerfile:latest .
+
+	Sending build context to Docker daemon 2.048 kB
+	Step 1 : FROM debian:latest
+	 ---> 1b01529cc499
+	Step 2 : MAINTAINER Hank Preston <hank.preston@gmail.com>
+	 ---> Using cache
+	 ---> 9f7054e99744
+	Step 3 : RUN apt-get update && apt-get install -y     aufs-tools     automake     build-essential     curl     dpkg-sig     mercurial  && rm -rf /var/lib/apt/lists/*
+	 ---> Using cache
+	 ---> 331e39ad1dc4
+	Step 4 : EXPOSE 80
+	 ---> Running in 67d60d70e80b
+	 ---> 788c0d174e3d
+	Removing intermediate container 67d60d70e80b
+	Successfully built 788c0d174e3d
+```
 

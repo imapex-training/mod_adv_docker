@@ -1,13 +1,13 @@
 
-## Docker CLI: Accessing the Docker image shell
+## A Simple Dockerfile
 
-```
-	docker run -it <your username>/imapex101_dockerfile /bin/bash
+* Dockerfiles use `FROM` to indicate the base image
 
-	# now you're in the container, type exit to stop the container
-	root@80333d17d6c2:/# exit
-```
+	```
+	FROM debian:latest
 
-* `-it` attaches to STDIN and creates a tty terminal to use
-* `/bin/bash` specifies the command to run inside the container
+	```
+
+* the `:latest` part indicates the "tag" to use on the image.  Tags will be covered more later, but for now know that "latest" is a well understood standard tag in Docker.  If you do NOT explicitly set a tag, Docker will look for a "latest" tag.  
+
 

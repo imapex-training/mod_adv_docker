@@ -1,9 +1,5 @@
 
-## Simple Docker lifecycle
+## Experiments
 
-* Edit `Dockerfile`
-* `docker build`
-* `docker run`
-* `GOTO 10`  `:-)`
-* Whenever you edit your `Dockerfile`, you need to rebuild your container.
+*In this section, use whatever text editor you wish when updating the Dockerfile*
 

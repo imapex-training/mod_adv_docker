@@ -1,9 +1,7 @@
 
-## Create a new directory for the Dockerfile practice
+##  Why Containers
 
-```
-mkdir imapex101_dockerfile
-cd imapex101_dockerfile
-touch Dockerfile
-```
+* Easily package your application dependencies
+* Deploy on many container-friendly platforms
+* Container registries make it easy to distribute
 

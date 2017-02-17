@@ -1,23 +1,9 @@
 
-## Example
+* The last parameter is the location to find the Dockerfile to use.  Specifying `.` looks in the current directory for `Dockerfile`
 
 ```
-FROM debian:latest
-MAINTAINER Your Name <email@domain.com>
 
-# You can provide comments in Dockerfiles
-# Install any needed packages for your application
-RUN apt-get update && apt-get install -y \
-    aufs-tools \
-    automake \
-    build-essential \
-    curl \
-    dpkg-sig \
-    mercurial \
- && rm -rf /var/lib/apt/lists/*
+$ docker build -t <your username>/imapex101_dockerfile:latest .
+
 ```
-
-* Now, build your image
-
-`docker build -t <your username>/imapex101_dockerfile:latest .`
 

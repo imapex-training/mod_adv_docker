@@ -1,8 +1,9 @@
 
-## Docker CLI: Listing running or stopped containers
+## Simple Docker lifecycle
 
-Run the `docker ps -a` command to see the remnants of your container... you could restart it from this state with docker start, but another docker run would create a new one
+* Edit `Dockerfile`
+* `docker build`
+* `docker run`
+* `GOTO 10`  `:-)`
+* Whenever you edit your `Dockerfile`, you need to rebuild your container.
 
-```
-	$ docker ps -a
-```
