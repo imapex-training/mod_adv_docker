@@ -1,19 +1,5 @@
 
-## Docker CLI: docker logs
-```
-docker logs dockerfile
+## Dockerfile: MAINTAINER and RUN
+* `MAINTAINER` provides details about the author.  Providing your name and email are typical.  Email address within `< >` symbols.
+* The next layer should install any packages needed.  Use a single `RUN` command and leverage `&&` to string commands together, and `\` to allow readabilty with wrapping
 
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
-
-# Sure enough, it's hello worlding away
-# you can stop and start the same container like this
-$ docker stop dockerfile
-```

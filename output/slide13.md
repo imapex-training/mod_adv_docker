@@ -1,13 +1,11 @@
 
-## Adding an app
-
-* Now we'll create a program to run in the container.  Run these commands to create a basic Hello World shell script.  
+* Run this command to view your newly created image
 
 ```
-echo '#!/bin/bash' > hello_world.sh
-echo "while [ 0 -eq 0 ]; do" >> hello_world.sh
-echo "echo 'Hello World'" >> hello_world.sh
-echo "sleep 2" >> hello_world.sh
-echo "done" >> hello_world.sh
+$ docker images
+
+REPOSITORY                      TAG                 IMAGE ID            CREATED             SIZE
+<your username>/imapex101_dockerfile   latest              1b01529cc499        23 hours ago        125.1 MB
+
 ```
 

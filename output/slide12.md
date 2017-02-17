@@ -1,21 +1,14 @@
-## Dockerfile: EXPOSE 
-* Use `EXPOSE` to specify what port(s) your container will use to host services externally.  For example, if you are building a Web App Container, you'll likely expose port 80.  
+
+### Example Output
 
 ```
-FROM debian:latest
-MAINTAINER Your Name <email@domain.com>
-
-# You can provide comments in Dockerfiles
-# Install any needed packages for your application
-RUN apt-get update && apt-get install -y \
-    aufs-tools \
-    automake \
-    build-essential \
-    curl \
-    dpkg-sig \
-    mercurial \
- && rm -rf /var/lib/apt/lists/*
-
-EXPOSE 80
-
+	Sending build context to Docker daemon 2.048 kB
+	Step 1 : FROM debian:latest
+	latest: Pulling from library/debian
+	357ea8c3d80b: Pull complete
+	Digest: sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
+	Status: Downloaded newer image for debian:latest
+	 ---> 1b01529cc499
+	Successfully built 1b01529cc499
 ```
+

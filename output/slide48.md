@@ -1,0 +1,3 @@
+
+The tag **:latest** is a well understood standard in Docker to indicate a "default" image.  If you do not specify a particular tag when building or pulling, latest will be assumed.  It is up to the owner of the repository to manage what image is provided by **:latest**, and in fact it is possible to have a repository lacking a **:latest** tag.  That is considered bad practice and should be avoided.  Also remember that **:latest** rarely actually indicates the most recently built container... 	
+

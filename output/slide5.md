@@ -1,13 +1,8 @@
 
-## A Simple Dockerfile
+##  Docker Landscape
 
-* Dockerfiles use `FROM` to indicate the base image
-
-	```
-	FROM debian:latest
-
-	```
-	
-* the `:latest` part indicates the "tag" to use on the image.  Tags will be covered more later, but for now know that "latest" is a well understood standard tag in Docker.  If you do NOT explicitly set a tag, Docker will look for a "latest" tag.  
-
+* Docker for Mac vs Docker Toolbox
+* Docker Hub: Docker registry
+* Docker Swarm: Clustering for Docker
+* Docker is not the only game in town: rkt, LXC
 
