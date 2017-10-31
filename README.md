@@ -669,13 +669,13 @@ There is a hierarchy of objects within Docker that are worth having a solid unde
 
 [item]: # (slide)
 
-What we commonly think of as a Docker container would better be described as a _specificly **tagged image**, contained within a **repository**, managed by a **user or organization**, hosted on a particular **registry**_
+What we commonly think of as a Docker container would better be described as a _specifically **tagged image**, contained within a **repository**, managed by a **user or organization**, hosted on a particular **registry**_
 
 To be accurate, *container* is actually an instance of a tagged image that is running, or is currently stopped.  
 
 [item]: # (/slide)
 
-When getting started with Docker, it is easy, and perfectly fine to slip over the details, but if you are going to be actively building software to be distributed with containers, it's critical to understand the actualy objects.  
+When getting started with Docker, it is easy, and perfectly fine to slip over the details, but if you are going to be actively building software to be distributed with containers, it's critical to understand the actual objects.  
 
 [item]: # (slide)
 Within a single Repository, tags are used to provide different versions of what is typically the same application or service.  Some common uses of the tags would be:
@@ -805,7 +805,7 @@ To really use Docker effectively, you must understand the concept of tagging.  N
 
 ## Go Do it Exercises
 
-* Look at some commonly used repositories and see how they leverage tags.  Some examples to check are
+* Look at some commonly used repositories and see how they leverage tags.  Some examples to check are:
 	* MySQL
 	* CentOS
 	* Debian
@@ -821,7 +821,7 @@ To really use Docker effectively, you must understand the concept of tagging.  N
 # Section 4: Manual vs Auto-Build Repos
 [item]: # (/slide)
 
-So far, we've been building our images locally on our laptops, or downloading them from repositories.  This is great for testing and learning, but isn't practical for actual projects and applications.  The goal of DevOps, is to automate all the little things like building containers and pushing them to registries.  For our projects in imapex, there are two methods we'll look at for building and updating repos.  
+So far, we've been building our images locally on our laptops, or downloading them from repositories.  This is great for testing and learning, but it isn't practical for actual projects and applications.  The goal of DevOps is to automate all the little things, like building containers, and pushing them to registries.  For our projects in imapex, there are two methods we'll look at for building and updating repos.  
 
 The simplest solution are Automated Build repos.  These are repositories that are created and linked to a source code repository such as GitHub.  They leverage WebHooks to be notified anytime there is an event like a code commit, branch update, or pull request.  When these events happen, the registry (ie Docker Hub) will clone the code and attempt to build a new image based on the Dockerfile.  As long as the build completes successfully, it will publish a new image to the repository.  This solution is easy to setup, and requires nothing outside of a GitHub and Docker Hub account, but lacks methods for testing or validation of the changed code in the repository.  
 
